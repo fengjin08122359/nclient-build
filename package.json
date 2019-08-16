@@ -1,0 +1,27 @@
+{
+  "name": "nclient-build",
+  "version": "0.0.1",
+  "description": "create nclient workspace",
+  "main": "bin/index.js",
+  "bin": {
+    "nclient-build": "./bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node bin/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fengjin08122359/nclient-build.git"
+  },
+  "author": "mike",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fengjin08122359/nclient-build/issues"
+  },
+  "homepage": "https://github.com/fengjin08122359/nclient-build#readme",
+  "dependencies": {
+    "commander": "^3.0.0",
+    "ora": "^3.4.0"
+  }
+}

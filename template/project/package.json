@@ -36,6 +36,7 @@
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^23.6.0",
+    "babel-plugin-dynamic-import-webpack": "file:node_modules/babel-plugin-dynamic-import-webpack",
     "babel-preset-env": "^1.7.0",
     "babel-preset-stage-3": "^6.24.1",
     "element-ui": "^2.6.3",

@@ -1,6 +1,6 @@
 {
   "name": "nclient-build",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "create nclient workspace",
   "main": "bin/index.js",
   "bin": {
@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node bin/index.js"
+    "start": "set DEBUG=* & node bin/index.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,8 @@
   "homepage": "https://github.com/fengjin08122359/nclient-build#readme",
   "dependencies": {
     "commander": "^3.0.0",
+    "debug": "^4.1.1",
+    "fs-extra": "^8.1.0",
     "ora": "^3.4.0"
   }
 }

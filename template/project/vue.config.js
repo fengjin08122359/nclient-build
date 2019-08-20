@@ -1,3 +1,4 @@
+const router = require('./router.json')
 module.exports = {
   lintOnSave: process.env.NODE_ENV !== 'production',
   transpileDependencies: ['element-ui/src', 'element-ui/package', 'nclient-microfront/src'],
@@ -27,17 +28,5 @@ module.exports = {
     },
   },
   runtimeCompiler: true,
-  devServer: {
-    port: '8080',
-    proxy: {
-      // '/any800/': {
-      //   target: 'http://jk.demo.xiaoi.net', // 你接口的域名
-      //   changeOrigin: true,
-      // },
-      // '/VisitorManage_web/': {
-      //   target: 'http://jk.demo.xiaoi.net', // 你接口的域名
-      //   changeOrigin: true,
-      // }
-    }
-  }
+  devServer: router
 }

@@ -4,23 +4,21 @@
 </template>
 
 <script>
-import { Component } from "./index";
 export default {
   name: 'Component',
   data() {
     return {
-      component: new Component(this._uid)
+      
     }
   },
-  created() {
-    this.component.created()
+  methods: {
+    
   },
   mounted() {
-    this.component.mounted()
+    
   },
 }
 </script>
 
 <style>
-
 </style>

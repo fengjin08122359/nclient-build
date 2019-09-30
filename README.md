@@ -59,3 +59,13 @@
 (?) 选择在创建时是否包含vuex,vue router,elementui
 
 
+##usage
+1. nclient-build workspace <name> (创建工作区)
+1. nclient-build class <name> (创建js文件)
+2. nclient-build component <name> (创建vue和js类)
+3. nclient-build vue <name> (创建vue文件)
+4. nclient-build project <name> (创建项目)
+
+(x) project文件夹安装为空
+(x) component的js文件命名
+(x) pm2需要全局安装

@@ -2,7 +2,7 @@ import {Handle, DataHandle} from 'nclient-microfront';
 
 class Component extends DataHandle{
   constructor() {
-    super('component')
+    super('componentClass')
   }
   init () {
     console.log('Component init')
@@ -12,7 +12,7 @@ class Component extends DataHandle{
 let component = new Component()
 
 let handle = new Handle({
-  name: 'component',
+  name: 'componentClass',
   created () {
     component.init()
     console.log('component created')

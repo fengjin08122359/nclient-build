@@ -4,6 +4,7 @@ var fs = require('fs');
 var path = require('path');
 var fork = require('child_process').fork;
 var childList = {}
+var fse = require('fs-extra')
 require('shelljs/global');
 //读取多个工程下的路由配置文件
 //修改这些文件
@@ -202,7 +203,10 @@ router.get('/build', function(req, res, next) {
     var routerpath = path.resolve(dirpath, name);
     exec(`cd ${routerpath} && npm run build  && cd dist && jar -cvf ${name}.zip *`)
     distpath = path.resolve(routerpath, `./dist/${name}.zip`);
+    var dest = path.resolve(__dirname, `../dist/${name}.zip`);
+    fse.copy(distpath, dest)
   }
   res.send({distpath});
 })
+
 module.exports = router;

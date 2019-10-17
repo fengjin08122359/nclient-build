@@ -9,6 +9,7 @@ export default {
   name: 'Component',
   data() {
     return {
+      _uid: '',
       component: new Component(this._uid)
     }
   },

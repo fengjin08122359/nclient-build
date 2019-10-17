@@ -1,6 +1,6 @@
 {
   "name": "nclient-build",
-  "version": "0.0.13",
+  "version": "0.0.17",
   "description": "create nclient workspace",
   "main": "bin/index.js",
   "bin": {

@@ -1,4 +1,4 @@
-import {Handle, DataHandle} from 'nclient-microfront';
+import {DataHandle} from 'nclient-microfront';
 
 class Component extends DataHandle{
   constructor() {
@@ -9,21 +9,6 @@ class Component extends DataHandle{
   }
 }
 
-let component = new Component()
-
-let handle = new Handle({
-  name: 'componentClass',
-  created () {
-    component.init()
-    console.log('component created')
-  },
-  mounted () {
-    console.log('component mounted')
-  },
-})
-
-export default handle
-
 export {
-  component
+  Component
 }

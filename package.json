@@ -1,6 +1,6 @@
 {
   "name": "nclient-build",
-  "version": "0.0.17",
+  "version": "0.0.19",
   "description": "create nclient workspace",
   "main": "bin/index.js",
   "bin": {
@@ -8,7 +8,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "set DEBUG=* & node bin/index.js"
+    "start": "set DEBUG=* & node bin/index.js",
+    "reset":"npm uninstall -g nclient-build && npm install -g nclient-build"
   },
   "repository": {
     "type": "git",
@@ -20,7 +21,7 @@
     "url": "https://github.com/fengjin08122359/nclient-build/issues"
   },
   "homepage": "https://github.com/fengjin08122359/nclient-build#readme",
-  "dependencies": {
+  "dependencies": {   
     "commander": "^3.0.0",
     "debug": "^4.1.1",
     "fs-extra": "^8.1.0",

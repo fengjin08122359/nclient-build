@@ -1,12 +1,18 @@
 # nclient-build
 ## 久科新建工程类
-### 简单工程的创建
-( ) todo
-### 复杂工程的创建
-( ) todo
-### 简单工程的数据集合(vue和data创建)
-( ) todo
-### 复杂工程的数据(data创建)
+
+###install
+npm install --g nclient-build
+
+###usage
+1. nclient-build workspace <name> (创建工作区)
+1. nclient-build class <name> (创建js文件,用于类创建)
+2. nclient-build component <name> (创建vue和js类)
+3. nclient-build vue <name> (创建vue文件)
+4. nclient-build project <name> --dir=./project (创建项目)
+5. nclient-build version (版本号)
+6. nclient-build help (帮助)
+7. nclient-build fast-config (vue项目快捷设置)
 
 ##工程将分成两种开发模式
 ### 敏捷开发 
@@ -50,22 +56,18 @@
 3. 创建类(全部或者仅数据)
 ##目标
 (x) 创建一个命令行控制需要输入的指令
-( ) 创建一个页面管理工程
-( ) 需要可以新建项目,删除项目?
-( ) 创建一个工程启动程序
-( ) 工程中同时启动多个项目
-( ) 创建项目,简单或复杂,目录结构不一致
-( ) 在每个项目中创建类
+(x) 创建一个页面管理工程
+(x) 需要可以新建项目,删除项目?
+(x) 创建一个工程启动程序
+(x) 工程中同时启动多个项目
+(x) 创建项目,简单或复杂,目录结构不一致
+(x) 在每个项目中创建类
 (?) 选择在创建时是否包含vuex,vue router,elementui
 
 
-##usage
-1. nclient-build workspace <name> (创建工作区)
-1. nclient-build class <name> (创建js文件)
-2. nclient-build component <name> (创建vue和js类)
-3. nclient-build vue <name> (创建vue文件)
-4. nclient-build project <name> (创建项目)
+
 
 (x) project文件夹安装为空
 (x) component的js文件命名
 (x) pm2需要全局安装
+

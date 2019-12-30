@@ -1,9 +1,8 @@
 import {DataHandle} from 'nclient-microfront';
 
-class Component extends DataHandle{
+class ComponentComp extends DataHandle{
   constructor(_uid) {
     super('componentComp', _uid)
-    
   }
   init () {
     console.log('Component init')
@@ -17,5 +16,5 @@ class Component extends DataHandle{
 }
 
 export {
-  Component
+  ComponentComp
 }

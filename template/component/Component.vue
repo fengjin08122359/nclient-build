@@ -4,13 +4,13 @@
 </template>
 
 <script>
-import { Component } from "./index";
+import { ComponentComp } from "./index";
 export default {
   name: 'Component',
   data() {
     return {
-      _uid: '',
-      component: new Component(this._uid)
+      uid: '',
+      component: new ComponentComp(this.uid)
     }
   },
   created() {
